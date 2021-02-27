@@ -1,7 +1,23 @@
 {
   "name": "workspaces-test",
   "private": true,
+  "workspaces": [
+    "packages/*",
+    "packages/@renditions/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "lerna exec \"npm run preinstall --if-present\"",
+    "postinstall": "lerna exec \"npm run postinstall --if-present\"",
+    "prepare": "lerna exec \"npm run prepare --if-present\"",
+    "test": "lerna exec \"npm run test --if-present\""
+  },
+  "engines": {
+    "npm": ">=7.0.0"
+  },
+  "devDependencies": {
+    "lerna": "3.22.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
