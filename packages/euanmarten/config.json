@@ -1,0 +1,50 @@
+{
+  "imageRenditions": [
+    {
+      "width": 100
+    },
+    {
+      "width": 200
+    },
+    {
+      "width": 320
+    },
+    {
+      "width": 400
+    },
+    {
+      "width": 640
+    },
+    {
+      "width": 768
+    },
+    {
+      "width": 1024
+    },
+    {
+      "width": 1280
+    },
+    {
+      "width": 1920
+    }
+  ],
+  "imageBuildConfig": {
+    "input": "images",
+    "output": [
+      "public/static/images-dist",
+      "dist/static/images-dist"
+    ],
+    "concurrency": 20,
+    "fileTypes": ["jpg", "jpeg", "png"],
+    "compressionTargets": {
+      "jpg": ["webp", "jpeg"],
+      "jpeg": ["webp", "jpeg"],
+      "png": ["webp", "png"]
+    },
+    "quality": {
+      "jpeg": 85,
+      "png": 100
+    },
+    "resizeOptions": ">"
+  }
+}

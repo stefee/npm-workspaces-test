@@ -1,0 +1,32 @@
+{
+  "name": "@renditions/get-sizes",
+  "version": "3.0.0",
+  "description": "Generate the sizes attribute for HTML img and picture tags",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "standard --global describe --global it --global expect --global beforeEach && jest",
+    "tdd": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renditions/get-sizes.git"
+  },
+  "author": "Stef <stef@srilq.email>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/renditions/get-sizes/issues"
+  },
+  "homepage": "https://renditions.dev",
+  "devDependencies": {
+    "jest": "26.6.3",
+    "standard": "16.0.3"
+  },
+  "keywords": [
+    "sizes",
+    "image",
+    "picture",
+    "images",
+    "responsive images",
+    "responsive image"
+  ]
+}

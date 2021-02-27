@@ -1,0 +1,54 @@
+{
+  "name": "@renditions/react-picture-source",
+  "version": "0.1.0",
+  "description": "React component for rendering HTML source tag with nice abstractions over srcset and sizes attributes.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "test": "standard",
+    "compile": "npm run compile:cjs && npm run compile:esm",
+    "compile:cjs": "BABEL_MODULE_TYPE=commonjs babel src --out-dir dist/cjs",
+    "compile:esm": "BABEL_MODULE_TYPE=esm babel src --out-dir dist/esm",
+    "prepare": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renditions/react-picture-source.git"
+  },
+  "author": "Stef <stef@srilq.email>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/renditions/react-picture-source/issues"
+  },
+  "homepage": "https://renditions.dev",
+  "peerDependencies": {
+    "react": "16.x.x || 17.x"
+  },
+  "dependencies": {
+    "@renditions/get-sizes": "^3.0.0",
+    "@renditions/get-srcset": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.13.0",
+    "@babel/core": "7.13.8",
+    "@babel/preset-env": "7.13.8",
+    "@babel/preset-react": "7.12.13",
+    "react": "17.0.1",
+    "standard": "16.0.3"
+  },
+  "keywords": [
+    "react",
+    "srcset",
+    "sizes",
+    "source",
+    "sources",
+    "image",
+    "images",
+    "picture",
+    "pictures",
+    "responsive images",
+    "responsive image",
+    "responsive pictures",
+    "responsive picture"
+  ]
+}

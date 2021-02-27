@@ -1,0 +1,33 @@
+{
+  "name": "@renditions/get-srcset",
+  "version": "1.0.1",
+  "description": "Generate the srcset attribute for HTML img and picture tags",
+  "main": "src/index.js",
+  "scripts": {
+    "standard": "standard --global jest --global describe --global it --global expect --global beforeEach",
+    "test": "npm run standard && jest",
+    "tdd": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renditions/get-srcset.git"
+  },
+  "author": "Stef <stef@srilq.email>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/renditions/get-srcset/issues"
+  },
+  "homepage": "https://renditions.dev",
+  "devDependencies": {
+    "jest": "26.6.3",
+    "standard": "16.0.3"
+  },
+  "keywords": [
+    "srcset",
+    "image",
+    "picture",
+    "images",
+    "responsive images",
+    "responsive image"
+  ]
+}
